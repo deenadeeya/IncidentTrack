@@ -2,6 +2,8 @@
 
 A full-stack incident management demo: REST API (JSON Server + Express), optional Ollama for AI assist, and a React web UI for creating, viewing, and editing incidents.
 
+**Disclaimer — AI features:** Install **[Ollama](https://ollama.com)** from the official site and run it locally before using AI in the app (auto-categorise, summaries, tag/priority suggestions, bulk “Ollama AI” actions, and `GET /llm/health`). The backend expects Ollama at `OLLAMA_URL` (default `http://localhost:11434`) and a **pulled model** matching `OLLAMA_MODEL` in `backend/server.js` (default **`llama3.2:3b`** — run `ollama pull llama3.2:3b`, or set `OLLAMA_MODEL` to another model you have installed). Incident CRUD and the rest of the UI work without Ollama; only the AI-assisted paths need Ollama and the model.
+
 ## System Architecture
 
 ```

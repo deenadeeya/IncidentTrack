@@ -244,5 +244,4 @@ MIT
 ## Contact
 
 For support or questions:
-- Email: support@company.com
 - Docs: See README.md files in each folder
